@@ -9,3 +9,4 @@ Zadanie 1 - pozwala na wczytanie trzech dowolnych liczb całkowitych i wypiasnie
 Zadanie 1.1 - w/w z zastosowaniem sortowania tablic
 Zadanie 2 - pozwala na wczytanie z klawiatury dowolnej ilości liczb całkowitych a następnie wyświetla ich średnią
 Zadanie 3 - pętla przechodząca po wartościach od 1 do 100 a wyświetlająca tylko liczby nieparzyste
+KlasyWewnetrzneKonto - aplikacja "konto bankowe", każdy to robił :) Wykorzystanie klas wewnętrznych i programowania obiektowego
