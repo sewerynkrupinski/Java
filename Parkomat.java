@@ -53,45 +53,35 @@ class PoborOplaty
 
 class CzasParkowania
 {
-    private int czasParkowania;
-    private int godzina = 2;
-    private int minuty, noweMinuty;
+  
     
     
     void zwiekszCzas(int b)
     {
+        
+        int godzina = 2;
+        
         if (b == 0)
             System.out.println("Czas parkowania: 0");
         else if (b == 1)
-            System.out.println("Czas parkowania 0,5h");
+            System.out.println("Czas parkowania 0,5 h");
         else if (b == 2)
-            System.out.println("Czas parkowania 1h");
+            System.out.println("Czas parkowania 1 h");
         else if (b == 3)
-            System.out.println("Czas parkowania 1,5h");
+            System.out.println("Czas parkowania 1,5 h");
         else if (b == 4)
-            System.out.println("Czas parkowania 1h 45min");
+            System.out.println("Czas parkowania 1 h 45 min");
         else if (b == 5)
-            System.out.println("Cas parkowania 2h");
-        else {                  //powyżej 2 godzin każde 1 zł to 15 mmin
-//            if (b == 6){
-       minuty = (b - 5)*15;
-//            //godzina = 2;
-//            }
-//            else 
-//            {
-//                minuty = (b - (b -1)) * 15;
-//                godzina +=
-//            }
-                
-            if (minuty >=60)
-            {
-                godzina +=1;
-                noweMinuty = minuty -= 60;
-            }
-            else 
-                noweMinuty = minuty;
+            System.out.println("Cas parkowania 2 h");
+        else { 
             
-            System.out.println("Czas parkowania " +godzina + " h " + noweMinuty + " min");
+            int timer = b - 5; 
+            int minutes = timer * 15; 
+            int hours = minutes / 60;   
+            int rest = minutes - (hours * 60);
+            
+            int newHours = 2 + hours;
+            System.out.println("Czas parkowania " +newHours+ " h " + rest + " min");
         }
     }
     
