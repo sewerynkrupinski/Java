@@ -59,7 +59,7 @@ class CzasParkowania
     void zwiekszCzas(int b)
     {
         
-        int godzina = 2;
+       
         
         if (b == 0)
             System.out.println("Czas parkowania: 0");
